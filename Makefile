@@ -1,5 +1,5 @@
 # ============================================================================
-# MAKEFILE: Compilación del Árbol AVL Genérico
+# MAKEFILE: Compilación del Árbol AVL Genérico + Persona TDA
 # ============================================================================
 # 
 # Este Makefile automatiza la compilación del proyecto del Árbol AVL.
@@ -40,13 +40,13 @@ LIBS = -lm
 # ============================================================================
 
 # Archivos fuente (.c)
-SOURCES = arbol.c main.c
+SOURCES = arbol.c main.c persona.c
 
 # Archivos objeto (.o) generados durante la compilación
 OBJECTS = $(SOURCES:.c=.o)
 
 # Archivos header (.h)
-HEADERS = arbol.h
+HEADERS = arbol.h persona.h
 
 # Nombre del ejecutable final
 EXECUTABLE = arbol_avl
@@ -120,7 +120,7 @@ unoptimized:
 # Mostrar información del proyecto
 info:
 	@echo "========================================"
-	@echo "Proyecto: Árbol AVL Genérico"
+	@echo "Proyecto: Árbol AVL Genérico + Persona TDA"
 	@echo "========================================"
 	@echo "Archivos fuente: $(SOURCES)"
 	@echo "Archivos header: $(HEADERS)"
